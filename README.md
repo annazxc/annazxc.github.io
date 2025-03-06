@@ -3,11 +3,14 @@ some project files from uni
 Orienteering Game (C++ Project):    
 Interactive Games with Raylib Using OOP Principles   
 This project includes a presentation (PPT), a flowchart diagram,   
-the source code, and documentation generated with Doxygen in both HTML and LaTeX formats.
-  
-機械設計原理_期末報告: Rocket Design, Stress and Failure Analysis  
-bluetoothControlledCarProjectFinal: Bluetooth Controlled Car Final Presentation  
-挖土機之3D繪圖與工程圖: SolidWorks excavator design and drawing  
+the source code, and documentation generated with Doxygen in both HTML and LaTeX formats.  
+    
+bluetoothControlledCarProjectFinal: Using a Bluetooth module to connect with a phone app   
+for controlling the speed and direction of a self-built car,    
+while designing a mechanism to catch balls and navigate various terrains designed by professors    
+
+機械設計原理_期末報告: Rocket Design, Stress and Failure Analysis   
+挖土機之3D繪圖與工程圖: SolidWorks excavator design and drawing   
 微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors Through Literature)   
 
 PLEASE refer to project instructions for details  
