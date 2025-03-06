@@ -10,7 +10,7 @@ bluetoothControlledCarProjectFinal: Bluetooth Controlled Car Final Presentation
 微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors Through Literature)   
 
 PLEASE refer to project instructions for details  
-工程數學2-project-1: Math2 Project1: Nuclear Bomb Temperature Field Modeling and Analysis with graph  
+Nuclear Bomb Temperature Field Modeling and Analysis with graph  
 
 System of ODE’s and Phase Plane : Modeling cola Temperature Variation Over Time and Analyzing with MATLAB  
 
@@ -24,7 +24,7 @@ Perform Fourier Transform (FFT) to examine their frequency spectra
 and combine the FFT results to simulate the acoustic effects of dolphin and whale sounds together.   
 
 
-仿生科技_第二組: Biomimicry design Inspired by Scorpions    
+Biomimicry design Inspired by Scorpions    
 The project aims to address critical clinical challenges by integrating innovative design, leveraging technical expertise, and fostering collaboration. With a focus on market strategy, financial planning, and sustainable growth, it seeks impactful solutions.    
 
 LEGO_group : Simulating four-link mechanisms with LEGO, exploring universal joints, and brainstorming efficient power input designs  
