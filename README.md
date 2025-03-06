@@ -1,6 +1,7 @@
 some project files from uni    
   
 Orienteering Game (C++ Project):    
+Interactive Games with Raylib Using OOP Principles   
 This project includes a presentation (PPT), a flowchart diagram,   
 the source code, and documentation generated with Doxygen in both HTML and LaTeX formats.
   
@@ -10,7 +11,8 @@ bluetoothControlledCarProjectFinal: Bluetooth Controlled Car Final Presentation
 微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors Through Literature)   
 
 PLEASE refer to project instructions for details  
-Nuclear Bomb Temperature Field Modeling and Analysis with graph  
+Nuclear Bomb Temperature Field Modeling and Analysis with graph:
+Inspired by Manhattan Project
 
 System of ODE’s and Phase Plane : Modeling cola Temperature Variation Over Time and Analyzing with MATLAB  
 
@@ -25,7 +27,8 @@ and combine the FFT results to simulate the acoustic effects of dolphin and whal
 
 
 Biomimicry design Inspired by Scorpions    
-The project aims to address critical clinical challenges by integrating innovative design, leveraging technical expertise, and fostering collaboration. With a focus on market strategy, financial planning, and sustainable growth, it seeks impactful solutions.    
+The project aims to address critical clinical challenges by integrating innovative design, leveraging technical expertise,  
+and fostering collaboration. With a focus on market strategy, financial planning, and sustainable growth, it seeks impactful solutions.    
 
 LEGO_group : Simulating four-link mechanisms with LEGO, exploring universal joints, and brainstorming efficient power input designs  
 
