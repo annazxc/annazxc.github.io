@@ -5,7 +5,7 @@ This project includes a presentation (PPT), a flowchart diagram,
 the source code, and documentation generated with Doxygen in both HTML and LaTeX formats.
   
 機械設計原理: Rocket Design, Stress and Failure Analysis  
-機械實作: Bluetooth Controlled Car Final Presentation  
+bluetoothControlledCarProjectFinal: Bluetooth Controlled Car Final Presentation  
 挖土機之3D繪圖與工程圖: SolidWorks excavator design and drawing  
 微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors Through Literature)   
 
