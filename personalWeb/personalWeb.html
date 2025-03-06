@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+Purpose: practice
+Author: TingAn C
+Date: 2025/2/18
+-->
+<html>
+<head>
+<meta charset="utf8">
+<title>
+Ann's website
+</title>
+<link rel="shortcut icon" href="favicon.ico"/>
+<meta name="keywords" content="鄭庭安">
+<link rel="stylesheet" href="personalWeb.css">
+
+</head>
+<nav>
+    <h2>大綱</h2>
+    <ul>
+        <li>作業一 hw1</li>
+        <li>作業二 hw2</li>
+        <li><a href="https://www.nycu.edu.tw/nycu/en/index">nycu website</a></li>
+        <li><a href="https://github.com/annazxc/uni_projects.git">github</a></li>
+        <li>網路資源</li>
+
+    </ul>
+</nav>
+<table border="2">
+    <caption>
+     Some  projects
+    </caption>
+    
+     <tr>
+         <th rowspan="3">
+             Math
+         </th>
+         
+    
+         <td rowspan="=4">
+             1.<br>
+             2.<br>
+             3.<br>
+             4.<br>
+         </td>
+ 
+     </tr>
+ </table>
+ <table border="2">
+     <tr>
+         <th rowspan="3">
+             CS
+         </th>
+         
+    
+         <td rowspan="=4">
+             1.<br>
+             2.<br>
+             3.<br>
+             4.<br>
+         </td>
+ 
+     </tr>
+ </table>
+ <body>
+     
+     <h1>This is a personal website for practicing.</h1>
+     <script>
+     document.getElementsByTagName("h1")[0].addEventListener("click", function(){
+     if (this.style.color === "green") {
+     // Reset to original state
+     this.style.color = "blue";
+     this.innerText = "This is a personal website for practicing.";
+     } else {
+     // Change to green and "Hi"
+     this.style.color = "green";
+     this.innerText = "Hi";
+     }
+     });
+     </script>
+      
+ 
+         
+         
+     <main>
+         <figure>
+             <img src="pic.JPG" width="200" alt="大頭照" title="Hello"><figcaption>Welcome!</figcaption>
+         </figure>
+         <dl>
+             <h2>
+                 基本資料
+             </h2>
+             
+                 姓名Name: 鄭庭安 Tingan Cheng
+             </dt>
+             <dt>
+                 學號:110611103
+             </dt>
+             <br>
+             <dt>Please contact:</dt>
+             <a href="mailto:@annzxc555@gmail.com">email</a>
+             <dt>
+         </dl>
+         <section>
+            <h2>
+            Fun projects
+            </h2> 1.
+         </section>
+         <aside><style>
+             </style><h2>最新消息 What's new?</h2></aside>
+     </main>
+ 
+     <h1>Audio</h1>
+     <audio controls autoplay>
+         <source src="Debussy.mp3" type="audio/mp3">
+         你的瀏覽器不支援此功能
+         Your browser does not support the audio element.
+    </audio>
+     
+ </body>
+ </html>
