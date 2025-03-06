@@ -27,7 +27,7 @@ and combine the FFT results to simulate the acoustic effects of dolphin and whal
 仿生科技_第二組: Biomimicry design Inspired by Scorpions    
 The project aims to address critical clinical challenges by integrating innovative design, leveraging technical expertise, and fostering collaboration. With a focus on market strategy, financial planning, and sustainable growth, it seeks impactful solutions.    
 
-LEGO_Group1 : Simulating four-link mechanisms with LEGO, exploring universal joints, and brainstorming efficient power input designs  
+LEGO_group : Simulating four-link mechanisms with LEGO, exploring universal joints, and brainstorming efficient power input designs  
 
 NNfirst.ipynb : Built a neural network with four hidden layers to recognize digits from the MNIST dataset.  
 You can also go directly to [Colab](https://colab.research.google.com/drive/1HowV9ni0lMTnJy9WerZsJyQjUspaMsKy?usp=sharing) to view   
