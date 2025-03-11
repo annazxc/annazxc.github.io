@@ -7,10 +7,10 @@ This repository contains various university projects demonstrating different ski
 ## Table of Contents
 - [Orienteering Game (C++ Project)](#orienteering-game-c-project)
 - [Bluetooth Controlled Car Project Final](#bluetooth-controlled-car-project-final)
-- [機械設計原理_期末報告: Rocket Design, Stress and Failure Analysis](#機械設計原理_期末報告-rocket-design-stress-and-failure-analysis)
-- [挖土機之3D繪圖與工程圖: SolidWorks Excavator Design and Drawing](#挖土機之3d繪圖與工程圖-solidworks-excavator-design-and-drawing)
+- [機械設計原理_期末報告: Rocket Design, Stress and Failure Analysis]
+- [挖土機之3D繪圖與工程圖: SolidWorks Excavator Design and Drawing]
 - [微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors with paper)](#微機電專題-microelectromechanical-system-final-presentation-analysis-of-hall-effect-sensors)
-- [Nuclear Bomb Temperature Field Modeling and Analysis](#nuclear-bomb-temperature-field-modeling-and-analysis)
+- [Nuclear Bomb Temperature Field Modeling and Analysis]
 - [System of ODE’s and Phase Plane](#system-of-odes-and-phase-plane)
 - [Modeling of Pandemic and Oscillator](#modeling-of-pandemic-and-oscillator)
 - [Fourier Series and Transform](#fourier-series-and-transform)
