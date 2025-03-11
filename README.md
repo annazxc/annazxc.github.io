@@ -9,7 +9,7 @@ This repository contains various university projects demonstrating different ski
 - [Bluetooth Controlled Car Project Final](#bluetooth-controlled-car-project-final)
 - [機械設計原理_期末報告: Rocket Design, Stress and Failure Analysis]
 - [挖土機之3D繪圖與工程圖: SolidWorks Excavator Design and Drawing]
-- [微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors with paper)](#微機電專題-microelectromechanical-system-final-presentation-analysis-of-hall-effect-sensors)
+- [微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors with paper)]
 - [Nuclear Bomb Temperature Field Modeling and Analysis]
 - [System of ODE’s and Phase Plane](#system-of-odes-and-phase-plane)
 - [Modeling of Pandemic and Oscillator](#modeling-of-pandemic-and-oscillator)
