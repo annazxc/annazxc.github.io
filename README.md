@@ -17,7 +17,7 @@ This repository contains various university projects demonstrating different ski
 - [Biomimicry Design Inspired by Scorpions](#biomimicry-design-inspired-by-scorpions)
 - [LEGO Group](#lego-group)
 - [NNfirst.ipynb](#nnfirstipynb)
-- [GAN.ipynb](#GAN.ipynb)
+- [GAN.ipynb](#GANipynb)
 
 ---
 
