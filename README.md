@@ -88,6 +88,6 @@ You can also directly view the notebook on [Google Colab](https://colab.research
 Additionally, Gradio was used to present the results, and the impact of **depth** (number of layers) and **width** (neurons per layer) on the final outcome was explored.
 
 ---
-##Principles of GAN
+## Principles of GAN
 Some intutive of Cross entropy, KL divergence and GAN intro [Colab](https://colab.research.google.com/drive/1WiN1Ft4An4Hd6rtGY94BkcjZcJwr3Uys?usp=sharing)
 
