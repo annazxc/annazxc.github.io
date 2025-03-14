@@ -18,7 +18,7 @@ This repository contains various university projects demonstrating different ski
 - [LEGO Group](#lego-group)
 - [NNfirst.ipynb](#nnfirstipynb)
 - [GAN.ipynb](#GANipynb)
-- [lead compensator design](#lead-compensator-design)
+- [lead compensator design](#Lead-compensator-design)
 
 ---
 
@@ -94,5 +94,5 @@ Some intutive of Cross entropy, KL divergence and GAN principles [Colab](https:/
 
 ---
 
-## lead compensator design
+## Lead compensator design
 
