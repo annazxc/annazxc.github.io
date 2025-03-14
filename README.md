@@ -95,4 +95,5 @@ Some intutive of Cross entropy, KL divergence and GAN principles [Colab](https:/
 ---
 
 ## Lead compensator design
+[Colab](https://colab.research.google.com/drive/1LwVyRRtY4BolSafNuxeQfUuYrQIB7VsF?usp=sharing)
 
