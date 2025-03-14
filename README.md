@@ -19,6 +19,7 @@ This repository contains various university projects demonstrating different ski
 - [NNfirst.ipynb](#nnfirstipynb)
 - [GAN.ipynb](#GANipynb)
 - [lead compensator design](#Lead-compensator-design)
+- [LLM benchmarks for chatgpt,deepseek,claude](#LLM-benchmarks)
 
 ---
 
@@ -96,4 +97,10 @@ Some intutive of Cross entropy, KL divergence and GAN principles [Colab](https:/
 
 ## Lead compensator design
 [Colab](https://colab.research.google.com/drive/1LwVyRRtY4BolSafNuxeQfUuYrQIB7VsF?usp=sharing)
+
+---
+
+## LLM benchmarks
+Use an experiment for sensors and measurement about noisy signal to test their ability for engineering problem
+[Colab](https://colab.research.google.com/drive/19Vtolct8-K_xV6w_VDNTjh_YSn8_P9iG?usp=sharing)
 
