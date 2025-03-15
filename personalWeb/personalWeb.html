@@ -1,121 +1,101 @@
 <!DOCTYPE html>
-<!--
-Purpose: practice
-Author: TingAn C
-Date: 2025/2/18
--->
 <html>
 <head>
-<meta charset="utf8">
-<title>
-Ann's website
-</title>
-<link rel="shortcut icon" href="favicon.ico"/>
-<meta name="keywords" content="鄭庭安">
-<link rel="stylesheet" href="personalWeb.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tingan Cheng portfolio Website">
+    <meta name="author" content="Tingan Cheng">
+    <meta name="keywords" content="Tingan Cheng, Mechanical Engineering, NYCU, Portfolio, Projects">
+    <title>Tingan Cheng</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="personalWeb.css">
 </head>
-<nav>
-    <h2>大綱</h2>
-    <ul>
-        <li>作業一 hw1</li>
-        <li>作業二 hw2</li>
-        <li><a href="https://www.nycu.edu.tw/nycu/en/index">nycu website</a></li>
-        <li><a href="https://github.com/annazxc/uni_projects.git">github</a></li>
-        <li>網路資源</li>
 
-    </ul>
-</nav>
-<table border="2">
-    <caption>
-     Some  projects
-    </caption>
-    
-     <tr>
-         <th rowspan="3">
-             Math
-         </th>
-         
-    
-         <td rowspan="=4">
-             1.<br>
-             2.<br>
-             3.<br>
-             4.<br>
-         </td>
- 
-     </tr>
- </table>
- <table border="2">
-     <tr>
-         <th rowspan="3">
-             CS
-         </th>
-         
-    
-         <td rowspan="=4">
-             1.<br>
-             2.<br>
-             3.<br>
-             4.<br>
-         </td>
- 
-     </tr>
- </table>
- <body>
-     
-     <h1>This is a personal website for practicing.</h1>
-     <script>
-     document.getElementsByTagName("h1")[0].addEventListener("click", function(){
-     if (this.style.color === "green") {
-     // Reset to original state
-     this.style.color = "blue";
-     this.innerText = "This is a personal website for practicing.";
-     } else {
-     // Change to green and "Hi"
-     this.style.color = "green";
-     this.innerText = "Hi";
-     }
-     });
-     </script>
-      
- 
-         
-         
-     <main>
-         <figure>
-             <img src="pic.JPG" width="200" alt="大頭照" title="Hello"><figcaption>Welcome!</figcaption>
-         </figure>
-         <dl>
-             <h2>
-                 基本資料
-             </h2>
-             
-                 姓名Name: 鄭庭安 Tingan Cheng
-             </dt>
-             <dt>
-                 學號:110611103
-             </dt>
-             <br>
-             <dt>Please contact:</dt>
-             <a href="mailto:@annzxc555@gmail.com">email</a>
-             <dt>
-         </dl>
-         <section>
-            <h2>
-            Fun projects
-            </h2> 1.
-         </section>
-         <aside><style>
-             </style><h2>最新消息 What's new?</h2></aside>
-     </main>
- 
-     <h1>Audio</h1>
-     <audio controls autoplay>
-         <source src="Debussy.mp3" type="audio/mp3">
-         你的瀏覽器不支援此功能
-         Your browser does not support the audio element.
-    </audio>
-     
- </body>
- </html>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Tingan Cheng</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">01 : Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">02 : Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-12" style="margin-top: 30px;">
+                <h1 id="rollingText">This is a personal website for practicing.</h1>
+                <h1>Please refer to my <a href="https://github.com/annazxc/updated-uni-projects.git" target="_blank">Github</a> for projects.</h1>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <nav>
+                    <h2>Table of contents</h2>
+                    <ul>
+                        <li>hw1</li>
+                        <li>hw2</li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="col-md-4" style="margin-top: 100px;">
+                <main>
+                    <figure>
+                        <img src="pic.JPG" class="img-fluid rounded" alt="Selfie of Tingan Cheng" title="Hello!">
+                        <figcaption class="mt-2"> Welcome!</figcaption>
+                    </figure>
+                    <h2>Hello there!</h2>
+                    <p>I am 鄭庭安 Tingan Cheng.</p>
+                    <p>I study Mechanical Engineering at <a href="https://www.nycu.edu.tw/nycu/en/index" target="_blank">NYCU</a>.</p>
+                    <p>學號: 110611103</p>
+                </main>
+            </div>
+            
+            
+            <div class="col-md-4" style="padding-left: 150px;">
+                <div class="template-example">
+                    <h2>Links:</h2>
+                    <p>
+                        <a href="https://github.com/annazxc/updated-uni-projects.git" target="_blank"><i class="fab fa-github"></i> Github</a>
+                    </p>
+                    <h2>Please contact:</h2>
+                    <p>
+                        <a href="mailto:annzxc555@gmail.com">Email</a>
+                        <i class="fa fa-envelope ms-1"></i> annzxc555@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container text-center" role="contentinfo">
+        <div class="container">
+            <p>Inspired by big dreams &nbsp; :')</p>
+            <p>© Tingan Cheng 2025</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="personalWeb.js"></script>
+</body>
+</html>

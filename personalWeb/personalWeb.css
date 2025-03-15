@@ -1,7 +1,7 @@
 @charset "utf8";
 body {
-    background-color: rgb(248, 232, 234);
-    max-width: 800px;
+    background-color: rgb(246, 212, 216);
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -11,11 +11,23 @@ body {
   
 
 }
-  
-h2{
-    color:rgb(21, 22, 22);
+
+    
+dl dt {
+        font-size: 24px;
+        margin-top: 8px; 
+        margin-bottom: 8px; 
+    
     
 }
+ul li {
+    font-size: 24px;
+        margin-top: 8px; 
+        margin-bottom: 8px;
+
+}
+
+  
 * {
     font-family: "標楷體","PingFang TC", "Microsoft JhengHei", "Heiti TC", "Arial", sans-serif;
   }
@@ -27,3 +39,44 @@ h1{
     text-align: center;
     
 }
+figcaption {
+    margin-top: 10px;
+    color:rgb(112, 84, 214);
+    font-size: 2em;
+    line-height: 120%;
+    font-weight: 100;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px;
+}
+
+@keyframes rollIn {
+    from {
+        transform: translateX(100vw); 
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#rollingText {
+    display: inline-block;
+    position: relative;
+    color: rgb(112, 84, 214);
+    animation: rollIn 3s ease-in-out;
+}
+.resume-photo {
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
