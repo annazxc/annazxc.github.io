@@ -3,88 +3,165 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tingan Cheng portfolio Website">
+    <meta name="description" content="Tingan Cheng's resume and professional background in mechanical engineering">
     <meta name="author" content="Tingan Cheng">
-    <title>Resume</title>
-    
+    <meta name="keywords" content="Tingan Cheng, Mechanical Engineering, NYCU, Resume, Portfolio, Projects">
+    <title>Resume | Tingan Cheng</title>
     <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <meta name="keywords" content="鄭庭安">
-    <link rel="stylesheet" href="personalWeb.css">
-    
-    <style>
-        .section-container {
-            padding-top: 50px;
-        }
-        header {
-            margin-bottom: 80px;
-        }
-        
-    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Main navigation">
             <div class="container">
-                <a class="navbar-brand" href="personalWeb.html">Tingan Cheng</a>
+                <a class="navbar-brand" href="index.html">Tingan Cheng</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="personalWeb.html">01 : Home</a>
+                            <a class="nav-link" href="index.html">01 : Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">02 : Resume</a>
+                            <a class="nav-link active" href="#" aria-current="page">02 : Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">03 : Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">04 : Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     
-    <div class="container" style="margin-top: 50px;">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>Resume</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="section-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Education</h2>
+    <main id="main-content">
+        <section class="resume-header section-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center" style = "margin-top: 30px;">
+                        <h1>Resume</h1>
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center mt-4">
-                <div class="col-md-4 text-center">
-                    <img src="NYCU.jpg" alt="NYCU logo" class="img-fluid rounded">
-                </div>
-                <div class="col-md-7">
-                    <h4>National Yang Ming Chiao Tung University</h4>
-                    <h5>B.Eng in Mechanical Engineering | 2025</h5>
+        </section>
+        
+        <section id="education" class="section-container">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="row align-items-center mt-4">
+                    <div class="col-md-3 text-center mb-3 mb-md-0">
+                        <img src="NYCU.jpg" alt="NYCU logo" class="img-fluid rounded" style="max-width: 200px;">
+                    </div>
+                    <div class="col-md-9">
+                        <h3>National Yang Ming Chiao Tung University</h3>
+                        <p class="mb-2"><strong>B.Eng in Mechanical Engineering</strong> | Expected Graduation: 2025</p>
+                        <p>Relevant Coursework:</p>
+                        <ul class="list-unstyled row">
+                            <li class="col-md-6">- Engineering Mathematics</li>
+                            <li class="col-md-6">- Linear control</li>
+                            <li class="col-md-6">- Generative AI</li>
+                            <li class="col-md-6">- Mechanical design</li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+        
+        <section id="skills" class="section-container">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li>CAD Software (SolidWorks)</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>C/C++/MATLAB Programming</li>
+                            <li>Ansys(basic)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Creativity</li>
+                            <li>Team Collaboration</li>
+                            <li>Project Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="section-container">
+            <div class="container">
+                <h2>Academic Projects</h2>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="card-title">Project Name</h3>
+                                <p class="card-text">Brief description of the project, technologies used, and your contributions.</p>
+                                <ul>
+                                    <li>Key accomplishment 1</li>
+                                    <li>Key accomplishment 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="card-title">Project Name</h3>
+                                <p class="card-text">Brief description of the project, technologies used, and your contributions.</p>
+                                <ul>
+                                    <li>Key accomplishment 1</li>
+                                    <li>Key accomplishment 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="certificates" class="section-container">
+            <div class="container">
+                <h2>Certifications & Achievements</h2>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <ul>
+                            <li>Certification or achievement 1</li>
+                            <li>Certification or achievement 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer-container text-center">
         <div class="container">
-            <p>Inspired by big dreams &nbsp; :')</p>
-            <p>© Tingan Cheng 2025</p>
+            <p>Finding inspiration in life's simplest moments. &nbsp; :')</p>
+            <p>&copy; Tingan Cheng 2025</p>
         </div>
     </footer>
-
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <img src="mouse.png" alt="Back to top" title="Back to top">
+    </a>
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="personalWeb.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
