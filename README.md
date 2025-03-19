@@ -11,6 +11,7 @@ This repository contains various university projects demonstrating different ski
 - [挖土機之3D繪圖與工程圖: SolidWorks Excavator Design and Drawing]
 - [微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors with paper)]
 - [Nuclear Bomb Temperature Field Modeling and Analysis]
+- [Annsys simulation:Fluid flows into an isothermal tube by ANSYS]
 - [System of ODE’s and Phase Plane](#system-of-odes-and-phase-plane)
 - [Modeling of Pandemic and Oscillator](#modeling-of-pandemic-and-oscillator)
 - [Fourier Series and Transform](#fourier-series-and-transform)
