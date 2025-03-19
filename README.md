@@ -91,7 +91,7 @@ Additionally, Gradio was used to present the results, and the impact of **depth*
 
 ---
 ## GAN.ipynb
-Some intuition of Cross entropy, KL divergence and GAN principles [Colab](https://colab.research.google.com/drive/1WiN1Ft4An4Hd6rtGY94BkcjZcJwr3Uys?usp=sharing)
+Some intuition behind Cross entropy, KL divergence and GAN principles [Colab](https://colab.research.google.com/drive/1WiN1Ft4An4Hd6rtGY94BkcjZcJwr3Uys?usp=sharing)
 
 ---
 
