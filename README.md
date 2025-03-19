@@ -38,8 +38,10 @@ This project involves the creation of an orienteering game using C++ and Raylib.
 ---
 
 ## Bluetooth Controlled Car Project Final
-This project uses a **Bluetooth module** to connect with a phone app for controlling the speed and direction of a self-built car.   
-The car is designed to navigate various terrains and features a mechanism for **catching balls**.
+This project uses the Dabble app to connect an HM-10 and an BT05 Bluetooth module with an Arduino Mega   
+to control the speed and direction of a self-built car.   
+The car is powered by TT motors, driven by an L298N motor driver, for movement.   
+Additionally, it features a mechanism using SG90 and MG996R servos to catch ping-pong balls.   
 
 ---
 
