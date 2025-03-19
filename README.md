@@ -7,11 +7,13 @@ This repository contains various university projects demonstrating different ski
 ## Table of Contents
 - [Orienteering Game (C++ Project)](#orienteering-game-c-project)
 - [Bluetooth Controlled Car Project Final](#bluetooth-controlled-car-project-final)
-- [機械設計原理_期末報告: Rocket Design, Stress and Failure Analysis]
-- [挖土機之3D繪圖與工程圖: SolidWorks Excavator Design and Drawing]
-- [微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors with paper)]
-- [Nuclear Bomb Temperature Field Modeling and Analysis]
-- [Annsys simulation:Fluid flows into an isothermal tube by ANSYS]
+- 機械設計原理_期末報告: Rocket Design, Stress and Failure Analysis
+- 挖土機之3D繪圖與工程圖: SolidWorks Excavator Design and Drawing
+- 微機電專題: MicroElectroMechanical System Final Presentation (Analysis of Hall Effect Sensors with paper)
+- Nuclear Bomb Temperature Field Modeling and Analysis
+- Annsys simulation:Fluid flows into an isothermal tube by ANSYS
+- Notes_for_Linear_control_system: Approximately 150 pages of hand written notes
+- [personalWeb](#Personal-Website)
 - [System of ODE’s and Phase Plane](#system-of-odes-and-phase-plane)
 - [Modeling of Pandemic and Oscillator](#modeling-of-pandemic-and-oscillator)
 - [Fourier Series and Transform](#fourier-series-and-transform)
@@ -104,4 +106,7 @@ Some intuition behind Cross entropy, KL divergence and GAN principles [Colab](ht
 ## LLM benchmarks
 Use an experiment for sensors and measurement about noisy signal to test their ability for engineering problem
 [Colab](https://colab.research.google.com/drive/19Vtolct8-K_xV6w_VDNTjh_YSn8_P9iG?usp=sharing)
+
+## Personal Website  
+An interactive website using HTML, CSS, and JavaScript to present some of my work.
 
