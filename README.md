@@ -13,6 +13,7 @@ This repository contains various university projects demonstrating different ski
 - Nuclear Bomb Temperature Field Modeling and Analysis
 - Annsys simulation:Fluid flows into an isothermal tube by ANSYS
 - Notes_for_Linear_control_system: Approximately 150 pages of hand written notes
+- hw : Some assignments for Linear control system course include derivation and matlab simulation
 - [personalWeb](#Personal-Website)
 - [System of ODE’s and Phase Plane](#system-of-odes-and-phase-plane)
 - [Modeling of Pandemic and Oscillator](#modeling-of-pandemic-and-oscillator)
