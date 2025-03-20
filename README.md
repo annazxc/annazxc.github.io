@@ -1,6 +1,8 @@
 # Updated Uni Project Files
-
+# Hello! Welcome!
 This repository contains various university projects demonstrating different skills.
+# Please go to [Personal Website](https://annazxc.github.io/) for github pages
+
 
 ---
 
