@@ -1,7 +1,14 @@
 # Updated Uni Project Files
-# Hello! Welcome!
-This repository contains various university projects demonstrating different skills.
-# Please go to [Personal Website](https://annazxc.github.io/) for github pages
+
+## Hello and Welcome!
+
+This repository contains various university projects that demonstrate different skills.
+
+Feel free to explore and check out my work!
+
+## Visit My Personal Website
+
+You can learn more about me and my projects by visiting my [Personal Website](https://annazxc.github.io/).
 
 
 ---
