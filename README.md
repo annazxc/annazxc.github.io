@@ -8,7 +8,11 @@ Feel free to explore and check out my work!
 
 ## Visit My Personal Website
 
-You can learn more about me and my projects by visiting my [Personal Website](https://annazxc.github.io/).
+You can learn more about me and my projects by visiting my [Personal Website](https://annazxc.github.io/).   
+
+## Recent Project:    
+[Gardening game](https://annazxc.github.io/Gardening-game.github.io/)   
+Currently developing an Alice in Wonderland-themed gardening game using JavaScript and the Phaser framework.   
 
 
 ---
