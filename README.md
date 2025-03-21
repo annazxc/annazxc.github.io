@@ -77,9 +77,14 @@ This project discusses **ODEs** through different models:
 ---
 
 ## Fourier Series and Transform
-This project uses **MATLAB** to analyze and visualize dolphin and whale sounds, along with ocean noise. The following is done:
-- Analyze and visualize the frequency spectra of these sounds
-- Combine the FFT results to simulate the **acoustic effects** of dolphin and whale sounds together.
+This project uses MATLAB to analyze real-life dolphin and whale audio recordings.   
+Audio files from [NOAA Fisheries](https://www.fisheries.noaa.gov/national/science-data/sounds-ocean-mammals).    
+It explores both time-domain and frequency-domain representations of these sounds.      
+
+### Features:  
+- Analyze and visualize the frequency spectra of dolphin and whale sounds.  
+- Apply FFT to extract frequency components.  
+- Combine FFT results to simulate the acoustic interaction of dolphin and whale sounds.  
 
 ---
 
