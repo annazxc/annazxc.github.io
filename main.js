@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Enable active state for current navigation item
     setActiveNavItem();
-    
-    // Enable smooth scrolling for anchor links
     enableSmoothScrolling();
     
     // Enhancement: Add a simple animation for skill bars (if they exist)
@@ -44,9 +41,6 @@ function setActiveNavItem() {
     });
 }
 
-/**
- * Enables smooth scrolling for anchor links
- */
 function enableSmoothScrolling() {
     // Only apply if the browser doesn't natively support smooth scrolling
     // or if the user hasn't set prefers-reduced-motion
@@ -84,9 +78,7 @@ function enableSmoothScrolling() {
     });
 }
 
-/**
- * Animates skill bars if they exist
- */
+
 function animateSkillBars() {
     const skillBars = document.querySelectorAll('.skill-bar');
     
@@ -172,49 +164,21 @@ function enhanceAccessibility() {
     });
 }
 
-/*contact form*/
-// Contact form validation
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            if (!this.checkValidity()) {
-                event.stopPropagation();
-                this.classList.add('was-validated');
-                return;
-            }
-            
-            // If form is valid, show success message
-            // In a real implementation, you would send the form data to a server here
-            document.getElementById('formSuccess').style.display = 'block';
-            this.reset();
-            this.classList.remove('was-validated');
-            
-            // Hide success message after 5 seconds
-            setTimeout(function() {
-                document.getElementById('formSuccess').style.display = 'none';
-            }, 5000);
-        });
-    }
-});
 
-// Back to top button functionality
+// Back to top button
 document.addEventListener('DOMContentLoaded', function() {
     var backToTopButton = document.getElementById('back-to-top');
     
-    // Show the button when scrolling down
     window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 100) { 
+        const scrollThreshold = window.innerHeight * 0.5;
+        if (window.pageYOffset > scrollThreshold) { 
             backToTopButton.style.display = 'block';
         } else {
             backToTopButton.style.display = 'none';
         }
     });
     
-    // Smooth scroll back to top when clicked
+    
     backToTopButton.addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({
@@ -223,4 +187,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
 

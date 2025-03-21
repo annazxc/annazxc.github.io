@@ -8,7 +8,7 @@
     --dark-bg-color: #212529; 
     
     
-    --font-family: "標楷體", "PingFang TC", "Microsoft JhengHei", "Heiti TC", "Arial", sans-serif;
+    --font-family: "Times New Roman","cwTeXFangSong","標楷體","Noto Sans TC","cwTeXKai","蘋方體","微軟正黑體", "Arial", sans-serif;
     --heading-line-height: 1.2;
     
     
@@ -33,6 +33,7 @@
     
     
     --border-radius: 0.25rem;
+    --navbar-height:70px;
 }
 
 * {
@@ -446,23 +447,44 @@ img {
     width: 1px;
 }
 
-/* Back to top button styles */
 .back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: clamp(10px, 4vw, 20px);
+    right: clamp(10px, 4vw, 20px);
     display: none; 
     z-index: 1000;
     cursor: pointer;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s, transform 0.3s;
 }
 
 .back-to-top img {
-    width: 50px; 
+    width: clamp(25px, 6vw, 50px); 
     height: auto;
     opacity: 0.7;
 }
 
+
 .back-to-top img:hover {
     opacity: 1;
 }
+
+.resume-header, 
+.projects-header
+ {
+    margin-top: 4vh;
+}
+.index-intro{
+    margin-top: 9vh;
+}
+
+/*fix contact me position*/
+section[id="contact"] {
+    scroll-margin-top: var(--navbar-height, 70px);
+  }
+  
+  @media (max-width: 768px) {
+    :root {
+      --navbar-height: 50px; 
+    }
+  }
+
