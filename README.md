@@ -45,6 +45,7 @@ Currently developing an Alice in Wonderland-themed gardening game using JavaScri
 This project involves the creation of an orienteering game using C++ and Raylib. It includes:
 - A **presentation (PPT)**
 - A **flowchart diagram**
+- A **class diagram**
 - **Source code**
 - **Documentation** generated with Doxygen in both HTML and LaTeX formats
 
