@@ -1,192 +1,180 @@
-document.addEventListener('DOMContentLoaded', function() {
-    setActiveNavItem();
-    enableSmoothScrolling();
-    
-    // Enhancement: Add a simple animation for skill bars (if they exist)
-    animateSkillBars();
-    
-    // Enhancement: Add a simple reveal animation for sections when scrolling
-    initScrollReveal();
-    
-    // Add accessibility enhancements
-    enhanceAccessibility();
-});
+document.addEventListener('DOMContentLoaded', () => {
+    // Debounce function to limit the rate of function calls
+    function debounce(func, delay) {
+        let timeoutId;
+        return function (...args) {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
 
-/**
- * Sets the active navigation item based on current page
- */
-function setActiveNavItem() {
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    navLinks.forEach(link => {
-        const linkPath = link.getAttribute('href');
-        
-        // Remove active class and aria-current from all links
-        link.classList.remove('active');
-        link.removeAttribute('aria-current');
-        
-        // Check if this is the current page
-        if (
-            // Exact match
-            currentPath === linkPath ||
-            // Home page with index.html
-            (currentPath.endsWith('/index.html') && linkPath === '#') ||
-            // Root path with # link
-            (currentPath === '/' && linkPath === '#')
-        ) {
-            link.classList.add('active');
-            link.setAttribute('aria-current', 'page');
-        }
-    });
-}
+    // Throttle function to limit the number of times a function can be called
+    function throttle(func, limit) {
+        let inThrottle;
+        return function (...args) {
+            if (!inThrottle) {
+                func.apply(this, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+            }
+        };
+    }
 
-function enableSmoothScrolling() {
-    // Only apply if the browser doesn't natively support smooth scrolling
-    // or if the user hasn't set prefers-reduced-motion
-    if ('scrollBehavior' in document.documentElement.style) return;
-    
-    const anchorLinks = document.querySelectorAll('a[href^="#"]:not([href="#"])');
-    
-    anchorLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                // Get element's position
-                const rect = targetElement.getBoundingClientRect();
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                const targetPosition = rect.top + scrollTop - 80; // Adjust for fixed header
-                
-                // Smooth scroll to element
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
+    // Optimized active navigation item setting
+    const setActiveNavItem = (() => {
+        const currentPath = window.location.pathname;
+        const pageName = currentPath.split('/').pop() || 'index.html';
+
+        return () => {
+            // Clear previous active states
+            document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
+                link.classList.remove('active');
+                link.removeAttribute('aria-current');
+            });
+
+            // More efficient selector and matching
+            const navLinks = document.querySelectorAll('.nav-link');
+            for (const link of navLinks) {
+                const linkPath = link.getAttribute('href');
+                const isMatch = 
+                    pageName === linkPath ||
+                    (pageName === 'index.html' && linkPath === '#') ||
+                    (linkPath === 'projects.html' && pageName === 'projects.html') ||
+                    (linkPath === 'resume.html' && pageName === 'resume.html');
+
+                if (isMatch) {
+                    link.classList.add('active');
+                    link.setAttribute('aria-current', 'page');
+                }
+            }
+
+            // Handle homework pages dropdown
+            if (pageName.startsWith('hw')) {
+                const dropdownToggle = document.querySelector('.dropdown-toggle');
+                if (dropdownToggle) dropdownToggle.classList.add('active');
+
+                document.querySelectorAll('.dropdown-item').forEach(item => {
+                    if (item.getAttribute('href') === pageName) {
+                        item.classList.add('active');
+                    }
                 });
-                
-                // Update URL without page jump
-                history.pushState(null, null, targetId);
-                
-                // Set focus to the element for accessibility
+            }
+        };
+    })();
+
+    // Optimized smooth scrolling
+    const enableSmoothScrolling = () => {
+        // Check for native smooth scroll support
+        if ('scrollBehavior' in document.documentElement.style) return;
+
+        const smoothScroll = (e) => {
+            e.preventDefault();
+            const targetElement = document.querySelector(e.currentTarget.getAttribute('href'));
+            if (targetElement) {
+                window.scrollTo({ 
+                    top: targetElement.offsetTop - 80, 
+                    behavior: 'smooth' 
+                });
+                history.pushState(null, null, e.currentTarget.getAttribute('href'));
                 targetElement.setAttribute('tabindex', '-1');
                 targetElement.focus();
             }
+        };
+
+        document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(link => {
+            link.addEventListener('click', smoothScroll);
         });
-    });
-}
+    };
 
+    // Performance-optimized skill bar animation
+    const animateSkillBars = () => {
+        const skillBars = document.querySelectorAll('.skill-bar');
+        if (!skillBars.length) return;
 
-function animateSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-bar');
-    
-    if (skillBars.length === 0) return;
-    
-    // Create an observer for skill bars
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const skillBar = entry.target;
-                const percentage = skillBar.getAttribute('data-percentage');
-                
-                skillBar.style.width = percentage + '%';
-                skillBar.classList.add('animated');
-                
-                // Unobserve after animation
-                observer.unobserve(skillBar);
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    // Use requestAnimationFrame for smoother animation
+                    requestAnimationFrame(() => {
+                        bar.style.width = bar.getAttribute('data-percentage') + '%';
+                        bar.classList.add('animated');
+                    });
+                    observer.unobserve(bar);
+                }
+            });
+        }, options);
+
+        skillBars.forEach(bar => observer.observe(bar));
+    };
+
+    // Scroll reveal with reduced motion support
+    const initScrollReveal = () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section-container').forEach(section => observer.observe(section));
+    };
+
+    // Enhanced accessibility 
+    const enhanceAccessibility = () => {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler) navbarToggler.setAttribute('aria-haspopup', 'true');
+
+        document.querySelectorAll('a[target="_blank"]').forEach(link => {
+            // Ensure security for external links
+            if (!link.getAttribute('rel')?.includes('noopener')) {
+                link.setAttribute('rel', (link.getAttribute('rel') || '') + ' noopener noreferrer');
+            }
+
+            // Add screen reader context
+            if (!link.querySelector('.visually-hidden')) {
+                const span = document.createElement('span');
+                span.className = 'visually-hidden';
+                span.textContent = ' (opens in new window)';
+                link.appendChild(span);
             }
         });
-    }, { threshold: 0.1 });
-    
-    // Observe each skill bar
-    skillBars.forEach(bar => {
-        observer.observe(bar);
-    });
-}
+    };
 
-/**
- * Initialize reveal animations for sections when scrolling
- */
-function initScrollReveal() {
-    // Check if user prefers reduced motion
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    
-    if (prefersReducedMotion) return;
-    
-    const sections = document.querySelectorAll('.section-container');
-    
-    // Create an observer for sections
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-                
-                // Unobserve after animation
-                observer.unobserve(entry.target);
-            }
+    // Optimized back to top button
+    const setupBackToTopButton = () => {
+        const backToTopButton = document.getElementById('back-to-top');
+        if (!backToTopButton) return;
+
+        // Use throttling to reduce scroll event performance impact
+        const handleScroll = throttle(() => {
+            backToTopButton.style.display = 
+                window.pageYOffset > window.innerHeight * 0.5 ? 'block' : 'none';
+        }, 200);
+
+        window.addEventListener('scroll', handleScroll);
+
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-    }, { threshold: 0.1 });
-    
-    // Observe each section
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-}
+    };
 
-/**
- * Add accessibility enhancements
- */
-function enhanceAccessibility() {
-    // Add appropriate ARIA attributes to the navbar toggle button
-    const navbarToggler = document.querySelector('.navbar-toggler');
-    if (navbarToggler) {
-        navbarToggler.setAttribute('aria-haspopup', 'true');
-    }
-    
-    // Ensure all external links have appropriate attributes
-    const externalLinks = document.querySelectorAll('a[target="_blank"]');
-    externalLinks.forEach(link => {
-        // Add rel="noopener noreferrer" if not present
-        if (!link.getAttribute('rel') || !link.getAttribute('rel').includes('noopener')) {
-            const currentRel = link.getAttribute('rel') || '';
-            link.setAttribute('rel', (currentRel + ' noopener noreferrer').trim());
-        }
-        
-        // Indicate that link opens in new window for screen readers if not already present
-        if (!link.querySelector('.visually-hidden')) {
-            const span = document.createElement('span');
-            span.className = 'visually-hidden';
-            span.textContent = ' (opens in new window)';
-            link.appendChild(span);
-        }
-    });
-}
-
-
-// Back to top button
-document.addEventListener('DOMContentLoaded', function() {
-    var backToTopButton = document.getElementById('back-to-top');
-    
-    window.addEventListener('scroll', function() {
-        const scrollThreshold = window.innerHeight * 0.5;
-        if (window.pageYOffset > scrollThreshold) { 
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
-    });
-    
-    
-    backToTopButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
+    // Initialize all functions
+    setActiveNavItem();
+    enableSmoothScrolling();
+    animateSkillBars();
+    initScrollReveal();
+    enhanceAccessibility();
+    setupBackToTopButton();
 });
-
-
-

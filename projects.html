@@ -32,10 +32,23 @@
                             <a class="nav-link" href="resume.html">02 : Resume <i class="fa-solid fa-user"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">03 : Projects <i class="fa-solid fa-layer-group"></i></a>
+                            <a class="nav-link" href="projects.html">03 : Projects <i class="fa-solid fa-layer-group"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#contact">04 : Contact <i class="fa-solid fa-address-book"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="hw.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                05 : HW 作業 
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="hw1.html">HW1</a></li>
+                                <li><a class="dropdown-item" href="hw2.html">HW2</a></li>
+                                <li><a class="dropdown-item" href="hw3.html">HW3</a></li>
+                                <li><a class="dropdown-item" href="hw4.html">HW4</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item active" href="hw.html">作業總覽</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -54,21 +67,21 @@
             </div>
         </section>
         
-        <section class="featured-project section-container">
+        <section class="section-container">
             <div class="container">
                 <h2>Lead Compensator Design</h2>
                 <div class="row align-items-center mt-4">
                     <div class="col-md-6 mb-4 mb-md-0">
                         <div class="img-container">
-                            <img src="/api/placeholder/600/400" alt="Featured project image" class="img-fluid">
+                            <img src="/assets/BodePlot.png" alt="image" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h3>Project Title</h3>
+                        <h3>still working on it</h3>
                         <p class="mb-3"><strong>Technologies:</strong> Simulink, Matlab</p>
-                        <p>Detailed description. Explain the problem you were trying to solve, your approach, the technologies and methodologies you used, and the outcomes or results.</p>
-                        <p>Include information about any challenges you faced and how you overcame them, as well as any particularly innovative aspects of your solution.</p>
-                        <a href="#" class="btn btn-primary mt-3">View Details</a>
+                        <p>description(not completed)</p>
+                        <p>still working on it</p>
+                        <a href="https://github.com/annazxc/annazxc.github.io/blob/main/lead_compensator_design.ipynb" class="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer">View Details</a>
                     </div>
                 </div>
             </div>
@@ -81,37 +94,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100">
                             <div class="ratio ratio-16x9">
-                                <img src="Cola.png" class="card-img-top object-fit-cover" alt="Cola Thermal Dynamic Model" loading="lazy">
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title text-center">Cola Thermal Dynamic Model</h3>
-                                <p class="card-text text-center">
-                                    Thermal data from 
-                                    <em>
-                                    <a href="https://www.mheducation.com/highered/product/Thermodynamics-An-Engineering-Approach-Cengel.html" target="_blank" rel="noopener noreferrer">Thermodynamics: An Engineering Approach</a><br>
-                                    </em>
-                                    By Cengel and Boles.
-                                </p>
-                                <p><strong>Features:</strong></p>   
-                                <ul>
-                                    <li>Simulates cola cooling in MATLAB.</li>
-                                    <li>Applies Newton's Law of Cooling with real data.</li>
-                                    <li>Solves ODEs using eigenvalue techniques.</li>
-                                </ul>                                    
-                                <div class="d-flex justify-content-between align-items-center mt-auto">
-                                    <div class="btn-group mx-auto">
-                                        <a href="https://github.com/annazxc/annazxc.github.io/blob/main/System%20of%20ODEs%20and%20Phase%20Plane%20.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">View Details</a>
-                                    </div>
-                                    <small class="text-muted">2021</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="ratio ratio-16x9">
-                                <img src="Damping.png" class="card-img-top object-fit-cover" alt="Damping Oscillation with different damping ratio." loading="lazy">
+                                <img src="/assets/Damping.png" class="card-img-top object-fit-cover" alt="Damping Oscillation with different damping ratio." loading="lazy">
                             </div>
                             <div class="card-body d-flex flex-column">
                                 <h3 class="card-title text-center">Modeling of Pandemic and Oscillator</h3>
@@ -132,11 +115,40 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="ratio ratio-16x9">
+                                <img src="/assets/Cola.png" class="card-img-top object-fit-cover" alt="Cola Thermal Dynamic Model" loading="lazy">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title text-center">Cola Thermal Dynamic Model</h3>
+                                <p class="card-text text-center">
+                                    Thermal data from <br>
+                                    <em>
+                                    <a href="https://www.mheducation.com/highered/product/Thermodynamics-An-Engineering-Approach-Cengel.html" target="_blank" rel="noopener noreferrer">Thermodynamics: An Engineering Approach</a><br>
+                                    </em>
+                                    By Cengel and Boles.
+                                </p>
+                                <p><strong>Features:</strong></p>   
+                                <ul>
+                                    <li>Simulates cola cooling in MATLAB.</li>
+                                    <li>Applies Newton's Law of Cooling with real data.</li>
+                                    <li>Solves ODEs using eigenvalue techniques.</li>
+                                </ul>                                    
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <div class="btn-group mx-auto">
+                                        <a href="https://github.com/annazxc/annazxc.github.io/blob/main/System%20of%20ODEs%20and%20Phase%20Plane%20.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">View Details</a>
+                                    </div>
+                                    <small class="text-muted">2022</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100">
                             <div class="ratio ratio-16x9">
-                                <img src="Sounds.png" class="card-img-top object-fit-cover" alt="Fourier Analysis of Mammal Sounds" loading="lazy">
+                                <img src="/assets/Sounds.png" class="card-img-top object-fit-cover" alt="Fourier Analysis of Mammal Sounds" loading="lazy">
                             </div>
                             <div class="card-body d-flex flex-column">
                                 <h3 class="card-title text-center">Fourier Analysis of Mammal Sounds</h3>
@@ -163,39 +175,45 @@
             </div>
         </section>
         
-        <section class="cs-assignments section-container">
+        <section class="others section-container">
             <div class="container">
-                <h2>CS Assignments</h2>
+                <h2>Other Coursework</h2>
                 <div class="row mt-4">
                     <div class="col-12">
-                        <div class="accordion" id="csAssignments">
-                            <!-- HW1 -->
+                        <div class="accordion" id="others">
+                            <!-- 1 -->
                             <div class="accordion-item">
                                 <h3 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        HW1:
+                                     Nuclear Bomb Temperature Field Modeling and Analysis
                                     </button>
                                 </h3>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#csAssignments">
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#others">
                                     <div class="accordion-body">
                                         <div class="row">
                                             <div class="col-md-4 mb-3 mb-md-0">
-                                                <img src="/images/placeholder.jpg" class="img-fluid rounded" alt="placeholder">
+                                                <img src="/assets/bomb.png" class="img-fluid rounded" alt="Nuclear Bomb">
                                             </div>
                                             <div class="col-md-8">
-                                                <p>placeholder</p>
-                                                <p><strong>Concept used:</strong> </p>
+                                                <p><strong>Real-World Applications of Vector Calculus</strong> </p>
                                             </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                <div class="btn-group mx-auto">
+                                                    <a href="https://github.com/annazxc/annazxc.github.io/blob/main/Nuclear%20Bomb%20Temperature%20Field%20Modeling%20and%20Analysis.pdf" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">View Details</a>
+                                                </div>
+                                                <small class="text-muted">2023</small>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <!-- HW2 -->
+                            <!--2 -->
                             <div class="accordion-item">
                                 <h3 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        HW2:
+                                        2:
                                     </button>
                                 </h3>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#csAssignments">
@@ -213,11 +231,11 @@
                                 </div>
                             </div>
         
-                            <!-- HW3 -->
+                            <!-- 3 -->
                             <div class="accordion-item">
                                 <h3 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        HW3:
+                                        3:
                                     </button>
                                 </h3>
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#csAssignments">
@@ -242,7 +260,7 @@
         
     </main>
 
-    <footer class="footer-container text-center">
+    <footer class="footer-container text-center mt-4 bg-dark text-light">
         <div class="container">
             <p>Finding inspiration in life's simplest moments. <i class="fa-solid fa-face-smile-wink"></i> </p>
             <p>&copy; Tingan Cheng 2025</p>
@@ -251,7 +269,7 @@
     <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
         <img src="mouse.png" alt="Back to top" title="Back to top">
     </a>
-    <!-- Bootstrap 5 JS -->
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>

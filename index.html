@@ -20,17 +20,16 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Main navigation">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="self.png" alt="Tingan Cheng" class="d-inline-block align-text-top" style="width: 90px; height: auto;">
+                <a class="navbar-brand" href="#">   
+                    <img src="/assets/self.png" alt="Tingan Cheng" class="d-inline-block align-text-top" style="width: 90px; height: auto;">
                 </a>
-                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">01 : Home <i class="fa-solid fa-house"></i></a>
+                            <a class="nav-link" href="#">01 : Home <i class="fa-solid fa-house"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="resume.html">02 : Resume <i class="fa-solid fa-user"></i></a>
@@ -40,6 +39,19 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">04 : Contact <i class="fa-solid fa-address-book"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="hw.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                05 : HW 作業 
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="hw1.html">HW1</a></li>
+                                <li><a class="dropdown-item" href="hw2.html">HW2</a></li>
+                                <li><a class="dropdown-item" href="hw3.html">HW3</a></li>
+                                <li><a class="dropdown-item" href="hw4.html">HW4</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item active" href="hw.html">作業總覽</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +76,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-4 order-md-2 mb-4 mb-md-0">
                         <figure class="img-container">
-                            <img src="pic.JPG" class="img-fluid rounded" alt="Portrait of Tingan Cheng" title="Hello!">
+                            <img src="/assets/pic.JPG" class="img-fluid rounded" alt="Portrait of Tingan Cheng" title="Hello!">
                             <figcaption class="mt-2">Welcome!</figcaption>
                         </figure>
                     </div>
@@ -111,7 +123,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h3 class="card-title">Generative Adversarial Network &nbsp;</h3>
-                                <p class="card-text">Some intuition behind GAN principles. &nbsp;</p>
+                                <p class="card-text">Some intuition behind GAN principles. </p><br>
                                 <a href="https://github.com/annazxc/annazxc.github.io/blob/0ee2d7c/GAN.ipynb" class="btn btn-outline-primary"target="_blank" rel="noopener noreferrer">Learn More</a>
                             </div>
                         </div>
@@ -130,6 +142,7 @@
                 </div>
             </div>
         </section>
+
 
         <section id="contact" class="contact-section section-container">
             <div class="container">
@@ -158,7 +171,7 @@
         </section>
     </main>
 
-    <footer class="footer-container text-center">
+    <footer class="footer-container text-center mt-4 bg-dark text-light">
         <div class="container">
             <p>Finding inspiration in life's simplest moments. <i class="fa-solid fa-face-smile-wink"></i></p>
             <p>&copy; Tingan Cheng 2025</p>
