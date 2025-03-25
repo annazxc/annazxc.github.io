@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Debounce function to limit the rate of function calls
     function debounce(func, delay) {
         let timeoutId;
         return function (...args) {
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    // Throttle function to limit the number of times a function can be called
     function throttle(func, limit) {
         let inThrottle;
         return function (...args) {
@@ -20,19 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    // Optimized active navigation item setting
     const setActiveNavItem = (() => {
         const currentPath = window.location.pathname;
         const pageName = currentPath.split('/').pop() || 'index.html';
 
         return () => {
-            // Clear previous active states
             document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
                 link.classList.remove('active');
                 link.removeAttribute('aria-current');
             });
 
-            // More efficient selector and matching
             const navLinks = document.querySelectorAll('.nav-link');
             for (const link of navLinks) {
                 const linkPath = link.getAttribute('href');
@@ -48,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            // Handle homework pages dropdown
             if (pageName.startsWith('hw')) {
                 const dropdownToggle = document.querySelector('.dropdown-toggle');
                 if (dropdownToggle) dropdownToggle.classList.add('active');
@@ -62,9 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     })();
 
-    // Optimized smooth scrolling
     const enableSmoothScrolling = () => {
-        // Check for native smooth scroll support
         if ('scrollBehavior' in document.documentElement.style) return;
 
         const smoothScroll = (e) => {
@@ -86,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Performance-optimized skill bar animation
     const animateSkillBars = () => {
         const skillBars = document.querySelectorAll('.skill-bar');
         if (!skillBars.length) return;
@@ -101,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const bar = entry.target;
-                    // Use requestAnimationFrame for smoother animation
                     requestAnimationFrame(() => {
                         bar.style.width = bar.getAttribute('data-percentage') + '%';
                         bar.classList.add('animated');
@@ -114,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
         skillBars.forEach(bar => observer.observe(bar));
     };
 
-    // Scroll reveal with reduced motion support
     const initScrollReveal = () => {
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
@@ -130,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.section-container').forEach(section => observer.observe(section));
     };
 
-    // Enhanced accessibility 
     const enhanceAccessibility = () => {
         const navbarToggler = document.querySelector('.navbar-toggler');
         if (navbarToggler) navbarToggler.setAttribute('aria-haspopup', 'true');
@@ -151,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Optimized back to top button
     const setupBackToTopButton = () => {
         const backToTopButton = document.getElementById('back-to-top');
         if (!backToTopButton) return;
@@ -170,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Initialize all functions
     setActiveNavItem();
     enableSmoothScrolling();
     animateSkillBars();
