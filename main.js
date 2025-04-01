@@ -164,3 +164,4 @@ document.addEventListener('DOMContentLoaded', () => {
     enhanceAccessibility();
     setupBackToTopButton();
 });
+
