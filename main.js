@@ -1,22 +1,81 @@
-document.addEventListener('DOMContentLoaded', () => {
-    function debounce(func, delay) {
-        let timeoutId;
-        return function (...args) {
-            clearTimeout(timeoutId);
-            timeoutId = setTimeout(() => func.apply(this, args), delay);
-        };
-    }
+    document.addEventListener('DOMContentLoaded', () => {
+        function debounce(func, delay) {
+            let timeoutId;
+            return function (...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => func.apply(this, args), delay);
+            };
+        }
 
-    function throttle(func, limit) {
-        let inThrottle;
-        return function (...args) {
-            if (!inThrottle) {
-                func.apply(this, args);
-                inThrottle = true;
-                setTimeout(() => inThrottle = false, limit);
+        function throttle(func, limit) {
+            let inThrottle;
+            return function (...args) {
+                if (!inThrottle) {
+                    func.apply(this, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            };
+        }
+
+  
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Fix for navbar not closing when clicking any link (including Contact)
+            const navLinks = document.querySelectorAll('#navbarNav .nav-link');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            
+            // Close navbar when any nav link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Check if Bootstrap's collapse plugin is available
+                    if (bootstrap && bootstrap.Collapse) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                            toggle: false
+                        });
+                        bsCollapse.hide();
+                    } else {
+                        // Fallback for when bootstrap JS isn't fully loaded
+                        navbarCollapse.classList.remove('show');
+                    }
+                });
+            });
+            
+            // 2. Fix for anchor links (like #contact) - handle them properly
+            const contactLink = document.querySelector('a[href="index.html#contact"]');
+            if (contactLink) {
+                contactLink.addEventListener('click', function(e) {
+                    // Check if we're already on the index page
+                    const isIndexPage = window.location.pathname.endsWith('index.html') || 
+                                        window.location.pathname.endsWith('/') || 
+                                        window.location.pathname === '';
+                    
+                    if (isIndexPage) {
+                        e.preventDefault();
+                        
+                        // Get navbar height
+                        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                        
+                        // Get the contact section
+                        const contactSection = document.querySelector('#contact');
+                        if (contactSection) {
+                            // Calculate position with offset for fixed navbar
+                            const targetPosition = contactSection.getBoundingClientRect().top + 
+                                                window.pageYOffset - 
+                                                navbarHeight - 
+                                                10; // Extra padding
+                            
+                            // Scroll to the section smoothly
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                    // If not on index page, let default navigation happen
+                });
             }
-        };
-    }
+        });
+        
 
     const setActiveNavItem = (() => {
         const currentPath = window.location.pathname;
@@ -124,12 +183,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (navbarToggler) navbarToggler.setAttribute('aria-haspopup', 'true');
 
         document.querySelectorAll('a[target="_blank"]').forEach(link => {
-            // Ensure security for external links
             if (!link.getAttribute('rel')?.includes('noopener')) {
                 link.setAttribute('rel', (link.getAttribute('rel') || '') + ' noopener noreferrer');
             }
 
-            // Add screen reader context
             if (!link.querySelector('.visually-hidden')) {
                 const span = document.createElement('span');
                 span.className = 'visually-hidden';
@@ -143,7 +200,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const backToTopButton = document.getElementById('back-to-top');
         if (!backToTopButton) return;
 
-        // Use throttling to reduce scroll event performance impact
         const handleScroll = throttle(() => {
             backToTopButton.style.display = 
                 window.pageYOffset > window.innerHeight * 0.5 ? 'block' : 'none';

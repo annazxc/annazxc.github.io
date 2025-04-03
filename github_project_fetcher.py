@@ -33,16 +33,14 @@ def fetch_github_projects(username, token=None):
     projects = []
     
     for repo in repos:
-        if repo.get("fork", False):  # Skip forked repositories
+        if repo.get("fork", False): 
             continue
             
         repo_name = repo["name"]
         repo_url = repo["html_url"]
         
-        # Get the description (from repo or README)
         description = repo.get("description", "")
         
-        # Try to fetch README content and extract description
         readme_info = get_readme_content(username, repo_name, token)
         if readme_info:
             extracted_desc = extract_description_from_readme(readme_info)
@@ -52,7 +50,6 @@ def fetch_github_projects(username, token=None):
         if not description:
             description = "No description available."
         
-        # Get the repository creation year
         created_at = repo.get("created_at", "")
         creation_year = ""
         if created_at:
