@@ -18,64 +18,6 @@
             };
         }
 
-  
-        document.addEventListener('DOMContentLoaded', function() {
-            // 1. Fix for navbar not closing when clicking any link (including Contact)
-            const navLinks = document.querySelectorAll('#navbarNav .nav-link');
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-            
-            // Close navbar when any nav link is clicked
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    // Check if Bootstrap's collapse plugin is available
-                    if (bootstrap && bootstrap.Collapse) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                            toggle: false
-                        });
-                        bsCollapse.hide();
-                    } else {
-                        // Fallback for when bootstrap JS isn't fully loaded
-                        navbarCollapse.classList.remove('show');
-                    }
-                });
-            });
-            
-            // 2. Fix for anchor links (like #contact) - handle them properly
-            const contactLink = document.querySelector('a[href="index.html#contact"]');
-            if (contactLink) {
-                contactLink.addEventListener('click', function(e) {
-                    // Check if we're already on the index page
-                    const isIndexPage = window.location.pathname.endsWith('index.html') || 
-                                        window.location.pathname.endsWith('/') || 
-                                        window.location.pathname === '';
-                    
-                    if (isIndexPage) {
-                        e.preventDefault();
-                        
-                        // Get navbar height
-                        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                        
-                        // Get the contact section
-                        const contactSection = document.querySelector('#contact');
-                        if (contactSection) {
-                            // Calculate position with offset for fixed navbar
-                            const targetPosition = contactSection.getBoundingClientRect().top + 
-                                                window.pageYOffset - 
-                                                navbarHeight - 
-                                                10; // Extra padding
-                            
-                            // Scroll to the section smoothly
-                            window.scrollTo({
-                                top: targetPosition,
-                                behavior: 'smooth'
-                            });
-                        }
-                    }
-                    // If not on index page, let default navigation happen
-                });
-            }
-        });
-        
 
     const setActiveNavItem = (() => {
         const currentPath = window.location.pathname;
