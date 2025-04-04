@@ -64,9 +64,13 @@ ul li, dl dt {
 
 header { margin-bottom: var(--spacing-xl); width: 100%; }
 
+.header { 
+    padding-top: 6vh;
+    padding-bottom: 3vh;
+}
 
-.resume-header, .projects-header, .hw-header { 
-    padding-top: 7vh;
+.hw-header{
+    padding-top: 9vh;
     padding-bottom: 3vh;
 }
 
