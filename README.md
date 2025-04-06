@@ -131,8 +131,12 @@ Some intuition behind Cross entropy, KL divergence and GAN principles [Colab](ht
 Use an experiment for sensors and measurement about noisy signal to test their ability for engineering problem
 [Colab](https://colab.research.google.com/drive/19Vtolct8-K_xV6w_VDNTjh_YSn8_P9iG?usp=sharing)
 
+---
+
 ## Personal Website  
 An interactive website using HTML, CSS, and JavaScript to present some of my work.
+
+---
 
 ## Control_System_Revision_Partner build with LLMs
 ## Overview:
