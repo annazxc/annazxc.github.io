@@ -239,7 +239,7 @@ img { max-width: 100%; height: auto; border-radius: var(--border-radius); }
 @media (max-width: 767px) {
     .row { flex-direction: column-reverse; }
     :root { --navbar-height: 50px; }
-    .dropdown-menu { max-height: 200px; overflow-y: auto; }
+    .dropdown-menu{ max-height: 200px; overflow-y: auto; }
 }
 
 @media(max-width:576px){
