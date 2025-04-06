@@ -37,6 +37,7 @@ Currently developing an Alice in Wonderland-themed gardening game using JavaScri
 - [GAN.ipynb](#GANipynb)
 - [lead compensator design](#Lead-compensator-design)
 - [LLM benchmarks for chatgpt,deepseek,claude](#LLM-benchmarks)
+- [Control_System_Revision_Partner](#Control_System_Revision_Partner-build-with-LLMs)
 
 ---
 
@@ -132,4 +133,14 @@ Use an experiment for sensors and measurement about noisy signal to test their a
 
 ## Personal Website  
 An interactive website using HTML, CSS, and JavaScript to present some of my work.
+
+## Control_System_Revision_Partner build with LLMs
+## Overview:
+
+This project demonstrates a dialog-based chatbot system built using Large Language Models for control systems assistance.
+
+- Uses Ollama to run the Gemma 3-4B model in a Colab environment.
+- Deploys the chatbot as a web app using the Gradio library.
+- Uses AISuite to enable a Socratic-style conversation between Groq's Llama-3.2-3B-preview and Llama-3-8B-8192 models.
+- [Colab](https://colab.research.google.com/drive/1B97lJzTO2l-CEnU5hsgefErh_ZPWq29K?usp=sharing)
 
