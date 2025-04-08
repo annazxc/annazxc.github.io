@@ -1,0 +1,1 @@
+Run it with: python fix.py your_notebook.ipynb
