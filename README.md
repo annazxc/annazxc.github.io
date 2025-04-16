@@ -151,4 +151,7 @@ This project demonstrates a dialog-based chatbot system built using Large Langua
 
 ---
 
+## Control_System_Two_Stage_CoT.ipynb  
+- [Colab](https://colab.research.google.com/drive/1OxUnnf-pkm3IaMD8iIOnwtLqfQDfXH_-?usp=sharing)
+
 
