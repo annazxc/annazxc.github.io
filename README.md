@@ -153,5 +153,11 @@ This project demonstrates a dialog-based chatbot system built using Large Langua
 
 ## Control_System_Two_Stage_CoT.ipynb  
 - [Colab](https://colab.research.google.com/drive/1OxUnnf-pkm3IaMD8iIOnwtLqfQDfXH_-?usp=sharing)
+- Using Chain of Thought concept
+- first planning and then writing
+- Use two groq LLMs
+- 1st model analyzes the user's input to identify key points and generate three response drafts.  
+- Then, 2nd model selects the best one, explains the choice,
+- and rewrites it in a clear, engaging, magazine-style format for easy understanding.
 
 
