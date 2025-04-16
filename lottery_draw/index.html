@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Draw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Lottery Draw</h1>
+        <div class="jackpot">JACKPOT: $10,000,000</div>
+        
+        <div class="machine" id="machine"></div>
+
+        <div class="timer" id="timer">Next draw in: 00:30</div>
+        
+        <div class="lottery-display" id="lottery-display">
+            <div class="ball" id="ball-1">?</div>
+            <div class="ball" id="ball-2">?</div>
+            <div class="ball" id="ball-3">?</div>
+            <div class="ball" id="ball-4">?</div>
+            <div class="ball" id="ball-5">?</div>
+            <div class="ball" id="ball-6">?</div>
+        </div>
+        
+        <button id="start-draw">Start Draw</button>
+        <button id="quick-pick">Quick Pick</button>
+        <button id="restart-game">Restart Game</button>
+        
+        <h3>Select Your Numbers:</h3>
+        <div class="number-pool" id="number-pool"></div>
+        
+        <div class="results" id="results">
+            <h3>Results</h3>
+            <p id="matches-message">Matching numbers will appear here.</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <h4>Games Played</h4>
+                <p id="games-played">0</p>
+            </div>
+            <div class="stat-box">
+                <h4>Best Result</h4>
+                <p id="best-result">0 matches</p>
+            </div>
+            <div class="stat-box">
+                <h4>Total Winnings</h4>
+                <p id="total-winnings">$0</p>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
