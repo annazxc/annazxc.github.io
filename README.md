@@ -160,4 +160,12 @@ This project demonstrates a dialog-based chatbot system built using Large Langua
 - Then, 2nd model selects the best one, explains the choice,
 - and rewrites it in a clear, engaging, magazine-style format for easy understanding.
 
+---
+
+## Web_APP_Stable_Diffusion_image_generate.ipynb
+- [Colab](https://colab.research.google.com/drive/1aWJu4Np1v91aq6RtxV7Wgq8GIcMqjr5X?usp=sharing#scrollTo=yy2-xjIyCpbI)
+- Using PerfectWorld_v4 model
+- Use stable diffusion to generate images
+- Explore some tradeoffs for image generation
+
 
