@@ -38,8 +38,8 @@ Currently developing an Alice in Wonderland-themed gardening game using JavaScri
 - [lead compensator design](#Lead-compensator-design)
 - [LLM benchmarks for chatgpt,deepseek,claude](#LLM-benchmarks)
 - [Control_System_Revision_Partner](#Control_System_Revision_Partner-build-with-LLMs)
-- [Control_System_Two_Stage_CoT](#Control_System_Two_Stage_CoT.ipynb)
-- [Web_APP_Stable_Diffusion_image_generate](#Web_APP_Stable_Diffusion_image_generate.ipynb)
+- [Control_System_Two_Stage_CoT](#Control-System-Two-Stage-CoT.ipynb)
+- [Web_APP_Stable_Diffusion_image_generate](#Web-APP-Stable-Diffusion-image_generate.ipynb)
 
 ---
 
