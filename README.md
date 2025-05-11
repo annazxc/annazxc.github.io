@@ -38,8 +38,8 @@ Currently developing an Alice in Wonderland-themed gardening game using JavaScri
 - [lead compensator design](#Lead-compensator-design)
 - [LLM benchmarks for chatgpt,deepseek,claude](#LLM-benchmarks)
 - [Control_System_Revision_Partner](#Control_System_Revision_Partner-build-with-LLMs)
-- [Control_System_Two_Stage_CoT](#Control-System-Two-Stage-CoT.ipynb)
-- [Web_APP_Stable_Diffusion_image_generate](#Web-APP-Stable-Diffusion-image_generate.ipynb)
+- [Control_System_Two_Stage_CoT](#Control_System_Two_Stage_CoT)
+- [Web_APP_Stable_Diffusion_image_generate](#Web_APP_Stable_Diffusion_image_generate)
 
 ---
 
@@ -153,7 +153,7 @@ This project demonstrates a dialog-based chatbot system built using Large Langua
 
 ---
 
-## Control_System_Two_Stage_CoT.ipynb  
+## Control_System_Two_Stage_CoT
 - [Colab](https://colab.research.google.com/drive/1OxUnnf-pkm3IaMD8iIOnwtLqfQDfXH_-?usp=sharing)
 - Using Chain of Thought concept
 - first planning and then writing
@@ -164,7 +164,7 @@ This project demonstrates a dialog-based chatbot system built using Large Langua
 
 ---
 
-## Web_APP_Stable_Diffusion_image_generate.ipynb
+## Web_APP_Stable_Diffusion_image_generate
 - [Colab](https://colab.research.google.com/drive/1aWJu4Np1v91aq6RtxV7Wgq8GIcMqjr5X?usp=sharing#scrollTo=yy2-xjIyCpbI)
 - Using PerfectWorld_v4 model
 - Use stable diffusion to generate images
