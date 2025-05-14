@@ -172,6 +172,6 @@ This project demonstrates a dialog-based chatbot system built using Large Langua
 
 ---
 ## Fooocus＿image_generation
--[Colab](https://colab.research.google.com/drive/1MP4MgHj8FmPX0qA5GSmJTR90O6iCOfh9?usp=sharing)
+- [Colab](https://colab.research.google.com/drive/1MP4MgHj8FmPX0qA5GSmJTR90O6iCOfh9?usp=sharing)
 
 
