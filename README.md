@@ -12,7 +12,7 @@ You can learn more about me and my projects by visiting my [Personal Website](ht
 
 ## Recent Project:    
 [Gardening game](https://annazxc.github.io/Gardening-game.github.io/)   
-Currently developing an Alice in Wonderland-themed gardening game using JavaScript and the Phaser framework.   
+An Alice in Wonderland-themed gardening game using JavaScript.   
 
 
 ---
