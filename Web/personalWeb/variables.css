@@ -1,0 +1,34 @@
+@charset "utf8";
+
+:root {
+    --primary-color: rgb(112, 84, 214);
+    --background-color: rgb(246, 212, 216);
+    --text-color: #333;
+    --light-text-color: #fff;
+    --dark-bg-color: #212529; 
+    
+    
+    --font-family: "Times New Roman","cwTeXFangSong","標楷體","Noto Sans TC", "Arial", sans-serif;
+    --heading-line-height: 1.2;
+    
+    
+    --font-size-sm: clamp(0.875rem, 2vw, 1rem);
+    --font-size-base: clamp(1rem, 2.5vw, 1.25rem);
+    --font-size-lg: clamp(1.25rem, 3vw, 1.5rem);
+    --font-size-xl: clamp(1.5rem, 4vw, 2rem);
+    --font-size-xxl: clamp(2rem, 5vw, 2.5rem);
+    
+    
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    --transition-quick: 0.3s ease;
+    
+    --container-max-width: min(90%, 1200px);
+
+    --border-radius: 0.25rem;
+    --navbar-height:70px;
+}
