@@ -1,189 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tingan Cheng's portfolio website showcasing mechanical engineering projects and skills">
-    <meta name="author" content="Tingan Cheng">
-    <meta name="keywords" content="Tingan Cheng, Mechanical Engineering, NYCU, Portfolio, Projects">
-    <title>Home | Tingan Cheng </title>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tingan Cheng's portfolio website showcasing mechanical engineering projects and skills"
+    />
+    <meta name="author" content="Tingan Cheng" />
+    <meta
+      name="keywords"
+      content="Tingan Cheng, Mechanical Engineering, NYCU, Portfolio, Projects"
+    />
+    <title>Home | Tingan Cheng</title>
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
     <a href="#main-content" class="skip-to-content">Skip to content</a>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Main navigation">
-            <div class="container">
-                <a class="navbar-brand" href="#">   
-                    <img src="assets/self.png" alt="Tingan Cheng" class="d-inline-block align-text-top" style="width: 90px; height: auto;">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/self.png"
+              alt="Tingan Cheng"
+              class="d-inline-block align-text-top"
+              style="width: 90px; height: auto"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Home <i class="fa-solid fa-house"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html"
+                  >Resume <i class="fa-solid fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html"
+                  >Projects <i class="fa-solid fa-layer-group"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contact"
+                  >Contact <i class="fa-solid fa-address-book"></i
+                ></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="hw.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  HW
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">01 : Home <i class="fa-solid fa-house"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resume.html">02 : Resume <i class="fa-solid fa-user"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">03 : Projects <i class="fa-solid fa-layer-group"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact">04 : Contact <i class="fa-solid fa-address-book"></i></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="hw.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                05 : HW 作業 
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="hw1.html">HW1</a></li>
-                                <li><a class="dropdown-item" href="hw2.html">HW2</a></li>
-                                <li><a class="dropdown-item" href="hw3.html">HW3</a></li>
-                                <li><a class="dropdown-item" href="hw4.html">HW4</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item active" href="hw.html">作業總覽</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="hw1.html">HW1</a></li>
+                  <li><a class="dropdown-item" href="hw2.html">HW2</a></li>
+                  <li><a class="dropdown-item" href="hw3.html">HW3</a></li>
+                  <li><a class="dropdown-item" href="hw4.html">HW4</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item active" href="hw.html">作業總覽</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-   
+
     <main id="main-content">
-        <section>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 index-intro">
-                        <h1 id="rollingText" class="mb-4">This is a personal website for practicing.</h1>
-                        <h2 class="text-center mb-5">Please refer to my <a href="https://github.com/annazxc/annazxc.github.io.git" target="_blank" rel="noopener noreferrer">Github <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">(opens in new window)</span></a> for projects.</h2>
-                    </div>
-                </div>
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 index-intro">
+              <h1 id="rollingText" class="mb-4">
+                This is a personal website for practicing.
+              </h1>
+              <h2 class="text-center mb-5">
+                Please refer to my
+                <a
+                  href="https://github.com/annazxc/annazxc.github.io.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github <i class="fab fa-github" aria-hidden="true"></i
+                  ><span class="visually-hidden">(opens in new window)</span></a
+                >
+                for projects.
+              </h2>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-4 order-md-2 mb-4 mb-md-0">
-                        <figure class="img-container">
-                            <img src="assets/pic.JPG" class="img-fluid rounded" alt="Portrait of Tingan Cheng" title="Hello!">
-                            <figcaption class="my-2">Welcome!</figcaption>
-                        </figure>
-                    </div>
-                    
-                    <div class="col-md-8 order-md-1">
-                        <h2>Hello there!</h2>
-                        <p>I am 鄭庭安 Tingan Cheng.</p>
-                        <p>I study Mechanical Engineering.</p>
-                        <p>@ <a href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener noreferrer">National Yang Ming Chiao Tung University (NYCU) <span class="visually-hidden">(opens in new window)</span>🇹🇼</a></p>
-                        <p>學號: 110611103</p>
-                        <div class="social-links mt-4">
-                            <a href="https://github.com/annazxc/annazxc.github.io.git" target="_blank" rel="noopener noreferrer" class="me-3">
-                                <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-                                <span class="visually-hidden">GitHub (opens in new window)</span>
-                            </a>
-                            <a href="mailto:annzxc555@gmail.com" class="me-3">
-                                <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
-                                <span class="visually-hidden">Email me</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4 order-md-2 mb-4 mb-md-0">
+              <figure class="img-container">
+                <img
+                  src="assets/pic.JPG"
+                  class="img-fluid rounded"
+                  alt="Portrait of Tingan Cheng"
+                  title="Hello!"
+                />
+                <figcaption class="my-2">Welcome!</figcaption>
+              </figure>
             </div>
-        </section>
 
-        <section class="section-container">
-            <div class="container">
-                <h2 class="text-center pb-4">Recent Projects</h2>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title">DNN modeling and training with MNIST in colab</h3>
-                                <p class="card-text">Built a deep neural network for digit recognition of the MNIST dataset.</p>
-                                <div class="d-flex justify-content-center align-items-center mt-auto">
-                                    <a href="https://github.com/annazxc/annazxc.github.io/blob/01d1b4f/generative%20ai%20colab%20projects/NNfirst.ipynb" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title">Generative Adversarial Network</h3>
-                                <p class="card-text">Some intuition behind GAN principles.</p><br>
-                                <div class="d-flex justify-content-center align-items-center mt-auto">
-                                    <a href="https://github.com/annazxc/annazxc.github.io/blob/af52e76/generative%20ai%20colab%20projects/GAN.ipynb" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title">Gardening wonderland</h3>
-                                <p class="card-text">Currently developing a gardening game with JavaScript and Phaser framework.</p><br>
-                                <div class="d-flex justify-content-center align-items-center mt-auto">
-                                    <a href="https://annazxc.github.io/Gardening-game.github.io/" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-8 order-md-1">
+              <h2>Hello there!</h2>
+              <p>I am 鄭庭安 Ting-An Cheng.</p>
+              <p>I study Engineering Cybernetics.</p>
+              <p>
+                @
+                <a
+                  href="https://www.uni-stuttgart.de/en/study/master-programs/engineering-cybernetics-m.sc./program-structure/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >University of Stuttgart.
+                  <span class="visually-hidden">(opens in new window)</span
+                  >🇩🇪</a
+                >
+              </p>
+              <p>I studied Mechanical Engineering.</p>
+              <p>
+                @
+                <a
+                  href="https://www.nycu.edu.tw/nycu/en/index"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >National Yang Ming Chiao Tung University (NYCU)
+                  <span class="visually-hidden">(opens in new window)</span
+                  >🇹🇼</a
+                >
+              </p>
+              <div class="social-links mt-4">
+                <a
+                  href="https://github.com/annazxc/annazxc.github.io.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="me-3"
+                >
+                  <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                  <span class="visually-hidden"
+                    >GitHub (opens in new window)</span
+                  >
+                </a>
+                <a href="mailto:annzxc555@gmail.com" class="me-3">
+                  <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                  <span class="visually-hidden">Email me</span>
+                </a>
+              </div>
             </div>
-        </section>    
+          </div>
+        </div>
+      </section>
 
-        <section id="contact" class="section-container">
-            <div class="container">
-                <h2 class="text-center pb-3">Contact Me</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <i class="fas fa-envelope me-2" aria-hidden="true"></i>
-                                    <strong>Email:</strong> <a href="mailto:annzxc555@gmail.com">annzxc555@gmail.com</a>
-                                </div>
-                                <div class="mb-3">
-                                    <i class="fab fa-github me-2" aria-hidden="true"></i>
-                                    <strong>GitHub:</strong> <a href="https://github.com/annazxc" target="_blank" rel="noopener noreferrer">github.com/annazxc <span class="visually-hidden">(opens in new window)</span></a>
-                                </div>
-                                <div class="mb-3">
-                                    <i class="fas fa-university me-2" aria-hidden="true"></i>
-                                    <strong>University:</strong> National Yang Ming Chiao Tung University (NYCU)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <section class="section-container">
+        <div class="container">
+          <h2 class="text-center pb-4">Recent Projects</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    DNN modeling and training with MNIST in colab
+                  </h3>
+                  <p class="card-text">
+                    Built a deep neural network for digit recognition of the
+                    MNIST dataset.
+                  </p>
+                  <div
+                    class="d-flex justify-content-center align-items-center mt-auto"
+                  >
+                    <a
+                      href="https://github.com/annazxc/annazxc.github.io/blob/01d1b4f/generative%20ai%20colab%20projects/NNfirst.ipynb"
+                      class="btn btn-outline-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Learn More</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Generative Adversarial Network</h3>
+                  <p class="card-text">Some intuition behind GAN principles.</p>
+                  <br />
+                  <div
+                    class="d-flex justify-content-center align-items-center mt-auto"
+                  >
+                    <a
+                      href="https://github.com/annazxc/annazxc.github.io/blob/af52e76/generative%20ai%20colab%20projects/GAN.ipynb"
+                      class="btn btn-outline-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">To be added</h3>
+                  <p class="card-text"></p>
+                  <br />
+                  <div
+                    class="d-flex justify-content-center align-items-center mt-auto"
+                  >
+                    <a
+                      href=""
+                      class="btn btn-outline-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-container">
+        <div class="container">
+          <h2 class="text-center pb-3">Contact Me</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+                    <strong>Email:</strong>
+                    <a href="mailto:annzxc555@gmail.com">annzxc555@gmail.com</a>
+                  </div>
+                  <div class="mb-3">
+                    <i class="fab fa-github me-2" aria-hidden="true"></i>
+                    <strong>GitHub:</strong>
+                    <a
+                      href="https://github.com/annazxc"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >github.com/annazxc
+                      <span class="visually-hidden"
+                        >(opens in new window)</span
+                      ></a
+                    >
+                  </div>
+                  <div class="mb-3">
+                    <i class="fas fa-university me-2" aria-hidden="true"></i>
+                    <strong>University:</strong> National Yang Ming Chiao Tung
+                    University (NYCU)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer-container text-center mt-4 bg-dark text-light">
-        <div class="container">
-            <p>Finding inspiration in life's simplest moments. <i class="fa-solid fa-face-smile-wink"></i></p>
-            <p>&copy; Tingan Cheng 2025</p>
-        </div>
+      <div class="container">
+        <p>
+          Finding inspiration in life's simplest moments.
+          <i class="fa-solid fa-face-smile-wink"></i>
+        </p>
+        <p>&copy; Tingan Cheng 2026</p>
+      </div>
     </footer>
-    
-<a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <img src="assets/mouse.png" alt="Back to top" title="Back to top">
-</a>
-    
+
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <img src="assets/mouse.png" alt="Back to top" title="Back to top" />
+    </a>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
